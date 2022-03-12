@@ -1,0 +1,26 @@
+{
+  "name": "roundup-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "mock": "node mock.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkrauskopf/coffee-graph-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkrauskopf/coffee-graph-poc/issues"
+  },
+  "homepage": "https://github.com/rkrauskopf/coffee-graph-poc#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": ">12.x"
+  }
+}
