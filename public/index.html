@@ -3,18 +3,16 @@
 <meta charset="UTF-8">
 <title>Page Title</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- <link rel="stylesheet" href=""> -->
-<!-- <style>
-</style> -->
+<link rel="stylesheet" href="index.css">
 <script src="app.js" defer></script>
 
 <body>
   <form id="rate-form">
     <label>Price</label>
-    <input name="price" type="number" required/>
+    <input name="price" type="number" step="0.01" required/>
 
     <label>Gallons</label>
-    <input name="gallons" type="number" required/>
+    <input name="gallons" type="number" step="0.01" required/>
 
     <label>Application Rate</label>
     <select name="application-rate" required>
