@@ -1,10 +1,7 @@
 // const connectBtn = document.getElementById("connect");
 
 const form = document.getElementById("rate-form");
-const resultDisplay = document.getElementById("result");
-
 const results = [];
-
 
 const formulationMap = {
   "standard": {
@@ -44,6 +41,17 @@ document.querySelector("#rate-form").addEventListener("submit", function(e){
     const result = ((price/gallons) * formulationMap[app_rate][formulation])/32;
 
     results.push(`$${result.toFixed(2)} per acre`);
-
-    resultDisplay.textContent = `$${result.toFixed(2)} per acre`;
+    displayResults();
+    // resultDisplay.textContent = `$${result.toFixed(2)} per acre`;
 });
+
+
+function displayResults(){
+  const resultsList = document.getElementById("results-list");
+  resultsList.innerHTML = "";
+  results.forEach(result => {
+    const li = document.createElement("li");
+    li.textContent = result;
+    resultsList.appendChild(li);
+  });
+}

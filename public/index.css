@@ -3,14 +3,10 @@
   flex-direction: column;
 }
 
-input, select {
-  height: 30px;
+input, select, button {
+  height: 60px;
 }
 
 .item, button {
   margin-top: 15px;
-}
-
-button {
-  height: 30px
 }
