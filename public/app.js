@@ -40,9 +40,8 @@ document.querySelector("#rate-form").addEventListener("submit", function(e){
 
     const result = ((price/gallons) * formulationMap[app_rate][formulation])/32;
 
-    results.push(`$${result.toFixed(2)} per acre`);
+    results.push(result.toFixed(2));
     displayResults();
-    // resultDisplay.textContent = `$${result.toFixed(2)} per acre`;
 });
 
 
@@ -51,7 +50,7 @@ function displayResults(){
   resultsList.innerHTML = "";
   results.forEach(result => {
     const li = document.createElement("li");
-    li.textContent = result;
+    li.textContent = `$${result} per acre`;
     resultsList.appendChild(li);
   });
 }
