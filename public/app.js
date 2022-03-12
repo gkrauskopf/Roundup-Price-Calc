@@ -3,6 +3,8 @@
 const form = document.getElementById("rate-form");
 const resultDisplay = document.getElementById("result");
 
+const results = [];
+
 
 const formulationMap = {
   "standard": {
@@ -39,7 +41,9 @@ document.querySelector("#rate-form").addEventListener("submit", function(e){
     const app_rate = form["application-rate"].value;
     const formulation = form.formulation.value;
 
-    const result = (price * gallons * formulationMap[app_rate][formulation])/32;
+    const result = ((price/gallons) * formulationMap[app_rate][formulation])/32;
 
-    resultDisplay.textContent = result.toFixed(2);
+    results.push(`$${result.toFixed(2)} per acre`);
+
+    resultDisplay.textContent = `$${result.toFixed(2)} per acre`;
 });
