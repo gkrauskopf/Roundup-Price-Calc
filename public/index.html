@@ -6,39 +6,38 @@
 <!-- <link rel="stylesheet" href=""> -->
 <!-- <style>
 </style> -->
-<script src="app.js"></script>
+<script src="app.js" defer></script>
 
 <body>
-  <form>
+  <form id="rate-form">
     <label>Price</label>
-    <input type="number" />
+    <input name="price" type="number" required/>
 
-    <label>Gallon</label>
-    <input type="number" />
+    <label>Gallons</label>
+    <input name="gallons" type="number" required/>
 
-    <label>Calculation Rate</label>
+    <label>Application Rate</label>
+    <select name="application-rate" required>
+      <option value="1">Standard</option>
+      <option value="1.5">1.5x Dose</option>
+      <option value="2">2x</option>
+    </select> 
 
-
-    <label>lbs ai/gal</label>
-    <select>
-      <option>4</option>
-      <option>5</option>
-      <option>5.4</option>
-      <option>5.5</option>
-      <option>6</option>
-    </select>  
-    
-    <label>lbs ae/gal</label>
-    <select>
-      <option>3</option>
-      <option>3.7</option>
-      <option>4</option>
-      <option>4.17</option>
-      <option>4.5</option>
-      <option>5</option>
+    <label>Formulation lbs ae/gal</label>
+    <select name="formulation" required>
+      <option value="3">3</option>
+      <option value="3.7">3.7</option>
+      <option value="4">4</option>
+      <option value="4.17">4.17</option>
+      <option value="4.5">4.5</option>
+      <option value="5">5</option>
     </select>  
 
-    <button>Calculate</button>
+    <button id="calculate-btn" type="sumbit">Calculate</button>
   </form>
+
+  <div id="result">
+
+  </div>
 </body>
 </html>
