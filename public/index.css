@@ -15,7 +15,7 @@ input, select, button {
 #calculate-btn span {
   font-weight: bold;
   font-size: 18px;
-  background-color: rgb(153, 58, 58);
+  background-color: rgb(180, 171, 171);
 }
 
 #results-label {
