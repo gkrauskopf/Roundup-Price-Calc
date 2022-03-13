@@ -1,7 +1,7 @@
 // const connectBtn = document.getElementById("connect");
 
 const form = document.getElementById("rate-form");
-const results = [];
+const results = []; 
 
 const formulationMap = {
   "standard": {
