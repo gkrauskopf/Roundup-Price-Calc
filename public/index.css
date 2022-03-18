@@ -3,7 +3,10 @@
   flex-direction: column;
   width: 50%;
 }
-
+  
+#title {
+  font-size: 26px;
+}
 input, select, button {
   height: 35px;
 }
