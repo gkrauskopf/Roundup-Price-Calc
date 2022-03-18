@@ -6,6 +6,7 @@
   
 #title {
   font-size: 26px;
+  font-style: italic;
 }
 input, select, button {
   height: 35px;
